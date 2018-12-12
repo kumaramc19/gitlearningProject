@@ -19,6 +19,8 @@ final class ConnectionHandler {
         
         guard let url = URL(string: url) else { return }
         
+        // Get value from url
+        // update by rakesh
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
